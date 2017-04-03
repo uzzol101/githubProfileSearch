@@ -22,6 +22,10 @@ export class GithubService {
     }
 
     updateUser(username: string) {
+<<<<<<< HEAD
         this.username = username;
+=======
+        // this.username = username;
+>>>>>>> ee82e9192eeee4608b2d6ae55b8d1017945f5362
     }
 }
