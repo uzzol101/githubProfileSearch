@@ -13,19 +13,18 @@ export class ProfileComponent {
     repos: any;
     userName: string;
     constructor(private githubService: GithubService) {
-<<<<<<< HEAD
+
 
     }
 
     searchUser() {
         this.user = false;
-=======
->>>>>>> ee82e9192eeee4608b2d6ae55b8d1017945f5362
+
         this.githubService.updateUser(this.userName);
 
         this.githubService.getUser().subscribe(user => {
             this.user = user;
-<<<<<<< HEAD
+
 
         });
 
@@ -35,18 +34,12 @@ export class ProfileComponent {
 
         });
 
-=======
-            console.log(user);
-        });
+
 
 
         this.githubService.getRepos().subscribe(repo => this.repos = repo);
 
     }
 
-    searchUser() {
-        // this.user = false;
->>>>>>> ee82e9192eeee4608b2d6ae55b8d1017945f5362
 
-    }
 }
